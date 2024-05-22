@@ -4,23 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Entrepreneurial & Networking Event</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-    <script src="https://kit.fontawesome.com/a58ede48c2.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .contact-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+        .contact-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .contact-card h3 {
+            margin: 10px 0;
+        }
+        .contact-card p {
+            color: #666;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+        .social-icons a img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.2s;
+        }
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+        .footer {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>AI Entrepreneurial & Networking Event - May 31st</h1>
-            <button class="dropdown-btn" onclick="toggleDropdown()">Menu</button>
-            <div id="dropdown-menu" class="dropdown-content">
-                <a href="#club-leaders">Club Leaders</a>
-                <a href="#special-guests">Special Guests</a>
-                <a href="#speakers">Speakers</a>
-            </div>
-        </header>
+        <h1>AI Entrepreneurial & Networking Event - May 31st</h1>
 
-        <section id="club-leaders" class="section">
+        <div class="section">
             <h2>Club Leaders</h2>
             <div class="grid">
                 <!-- Contact Card 1 -->
@@ -29,16 +94,37 @@
                     <h3>Leader 1</h3>
                     <p>President</p>
                     <div class="social-icons">
-                        <li><a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #cb5cff;"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin fa-beat" style="color: #005eff;"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-globe fa-beat" style="color: #000000;"></i></a></li>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
                     </div>
                 </div>
-                <!-- Repeat for other contacts -->
+                <!-- Contact Card 2 -->
+                <div class="contact-card">
+                    <img src="images/leader2.jpg" alt="Leader 2">
+                    <h3>Leader 2</h3>
+                    <p>Vice President</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+                    </div>
+                </div>
+                <!-- Contact Card 3 -->
+                <div class="contact-card">
+                    <img src="images/leader3.jpg" alt="Leader 3">
+                    <h3>Leader 3</h3>
+                    <p>Secretary</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section id="special-guests" class="section">
+        <div class="section">
             <h2>Special Guests</h2>
             <div class="grid">
                 <!-- Contact Card 1 -->
@@ -47,16 +133,37 @@
                     <h3>Guest 1</h3>
                     <p>AI Specialist</p>
                     <div class="social-icons">
-                        <li><a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #cb5cff;"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin fa-beat" style="color: #005eff;"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-globe fa-beat" style="color: #000000;"></i></a></li>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
                     </div>
                 </div>
-                <!-- Repeat for other contacts -->
+                <!-- Contact Card 2 -->
+                <div class="contact-card">
+                    <img src="images/guest2.jpg" alt="Guest 2">
+                    <h3>Guest 2</h3>
+                    <p>Data Scientist</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+                    </div>
+                </div>
+                <!-- Contact Card 3 -->
+                <div class="contact-card">
+                    <img src="images/guest3.jpg" alt="Guest 3">
+                    <h3>Guest 3</h3>
+                    <p>Researcher</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section id="speakers" class="section">
+        <div class="section">
             <h2>Speakers</h2>
             <div class="grid">
                 <!-- Contact Card 1 -->
@@ -65,18 +172,39 @@
                     <h3>Speaker 1</h3>
                     <p>Keynote Speaker</p>
                     <div class="social-icons">
-                        <li><a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #cb5cff;"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin fa-beat" style="color: #005eff;"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-globe fa-beat" style="color: #000000;"></i></a></li>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
                     </div>
                 </div>
-                <!-- Repeat for other contacts -->
+                <!-- Contact Card 2 -->
+                <div class="contact-card">
+                    <img src="images/speaker2.jpg" alt="Speaker 2">
+                    <h3>Speaker 2</h3>
+                    <p>AI Ethics</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+                    </div>
+                </div>
+                <!-- Contact Card 3 -->
+                <div class="contact-card">
+                    <img src="images/speaker3.jpg" alt="Speaker 3">
+                    <h3>Speaker 3</h3>
+                    <p>AI Development</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <footer>
+        <div class="footer">
             Hard-coded by Justin Liao || Copyright @ Innovators Hub (1%)
-        </footer>
+        </div>
     </div>
 </body>
 </html>
