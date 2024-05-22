@@ -14,72 +14,48 @@
 
     <section class="category">
         <h2>Club Leaders</h2>
-        <!-- Add club leader details here -->
-        <div class="person" onclick="showDetails('Leader 1', 'Title 1', 'Social Info 1')">
-            <img src="image/leader1.jpg" alt="Leader 1">
+        <div class="person">
+            <img src="image/leader1.jpg" alt="Leader 1" onclick="toggleSocial('leader1')">
             <h3>Leader 1</h3>
             <p>Title 1</p>
+            <div class="social" id="leader1">
+                <a href="https://instagram.com" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="image/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://example.com" target="_blank"><img src="image/website.png" alt="Website"></a>
+            </div>
         </div>
-        <div class="person" onclick="showDetails('Leader 2', 'Title 2', 'Social Info 2')">
-            <img src="image/leader2.jpg" alt="Leader 2">
-            <h3>Leader 2</h3>
-            <p>Title 2</p>
-        </div>
-        <div class="person" onclick="showDetails('Leader 3', 'Title 3', 'Social Info 3')">
-            <img src="image/leader3.jpg" alt="Leader 3">
-            <h3>Leader 3</h3>
-            <p>Title 3</p>
-        </div>
+        <!-- Repeat similar structure for other club leaders -->
     </section>
 
     <section class="category">
         <h2>Special Guests</h2>
-        <!-- Add special guest details here -->
-        <div class="person" onclick="showDetails('Guest 1', 'Title 1', 'Social Info 1')">
-            <img src="image/guest1.jpg" alt="Guest 1">
+        <div class="person">
+            <img src="image/guest1.jpg" alt="Guest 1" onclick="toggleSocial('guest1')">
             <h3>Guest 1</h3>
             <p>Title 1</p>
+            <div class="social" id="guest1">
+                <a href="https://instagram.com" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="image/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://example.com" target="_blank"><img src="image/website.png" alt="Website"></a>
+            </div>
         </div>
-        <div class="person" onclick="showDetails('Guest 2', 'Title 2', 'Social Info 2')">
-            <img src="image/guest2.jpg" alt="Guest 2">
-            <h3>Guest 2</h3>
-            <p>Title 2</p>
-        </div>
-        <div class="person" onclick="showDetails('Guest 3', 'Title 3', 'Social Info 3')">
-            <img src="image/guest3.jpg" alt="Guest 3">
-            <h3>Guest 3</h3>
-            <p>Title 3</p>
-        </div>
+        <!-- Repeat similar structure for other special guests -->
     </section>
 
     <section class="category">
         <h2>Speakers</h2>
-        <!-- Add speaker details here -->
-        <div class="person" onclick="showDetails('Speaker 1', 'Title 1', 'Social Info 1')">
-            <img src="image/speaker1.jpg" alt="Speaker 1">
+        <div class="person">
+            <img src="image/speaker1.jpg" alt="Speaker 1" onclick="toggleSocial('speaker1')">
             <h3>Speaker 1</h3>
             <p>Title 1</p>
+            <div class="social" id="speaker1">
+                <a href="https://instagram.com" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="image/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://example.com" target="_blank"><img src="image/website.png" alt="Website"></a>
+            </div>
         </div>
-        <div class="person" onclick="showDetails('Speaker 2', 'Title 2', 'Social Info 2')">
-            <img src="image/speaker2.jpg" alt="Speaker 2">
-            <h3>Speaker 2</h3>
-            <p>Title 2</p>
-        </div>
-        <div class="person" onclick="showDetails('Speaker 3', 'Title 3', 'Social Info 3')">
-            <img src="image/speaker3.jpg" alt="Speaker 3">
-            <h3>Speaker 3</h3>
-            <p>Title 3</p>
-        </div>
+        <!-- Repeat similar structure for other speakers -->
     </section>
-
-    <div id="infoModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3 id="modalName"></h3>
-            <p id="modalTitle"></p>
-            <p id="modalSocial"></p>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
