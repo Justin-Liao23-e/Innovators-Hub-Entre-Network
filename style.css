@@ -9,10 +9,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212; /* Dark background */
     color: #ffffff; /* White text */
+    text-align: center; /* Center-aligning text */
 }
 
 header {
-    text-align: center;
     padding: 20px;
     background-color: #333333; /* Dark gray background */
 }
@@ -32,13 +32,15 @@ h1, p {
     display: inline-block;
     cursor: pointer;
     background-color: #1e1e1e; /* Very dark gray background */
+    width: calc(33% - 22px); /* Three items per row, with padding and margin */
 }
 
 .person img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #ffffff; /* White border for images */
+    display: block;
+    margin: 0 auto; /* Center images */
 }
 
 .person h3, .person p {
@@ -46,9 +48,49 @@ h1, p {
     color: #dddddd; /* Light gray text */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .person {
-        display: block;
-        width: 100%;
+        width: calc(50% - 22px); /* Two items per row on smaller screens */
     }
+}
+
+@media (max-width: 480px) {
+    .person {
+        width: 100%; /* One item per row on very small screens */
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: black; /* Text color for modal */
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
