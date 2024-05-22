@@ -85,6 +85,22 @@
         .dropdown {
             position: relative;
             display: inline-block;
+            text-align: center;
+            margin: 20px auto;
+            display: block;
+        }
+        .dropdown .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown .dropbtn:hover {
+            background-color: #3e8e41;
         }
         .dropdown-content {
             display: none;
@@ -115,9 +131,18 @@
 </head>
 <body>
     <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#club-leaders">Club Leaders</a>
+                <a href="#special-guests">Special Guests</a>
+                <a href="#speakers">Speakers</a>
+            </div>
+        </div>
+
         <h1>AI Entrepreneurial & Networking Event - May 31st</h1>
 
-        <div class="section">
+        <div class="section" id="club-leaders">
             <h2>Club Leaders</h2>
             <div class="grid">
                 <!-- Contact Card 1 -->
@@ -156,7 +181,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="special-guests">
             <h2>Special Guests</h2>
             <div class="grid">
                 <!-- Contact Card 1 -->
@@ -195,7 +220,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="speakers">
             <h2>Speakers</h2>
             <div class="grid">
                 <!-- Contact Card 1 -->
@@ -231,15 +256,6 @@
                         <a href="#"><i class="fa-solid fa-globe" style="color: #000000;"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
             </div>
         </div>
 
