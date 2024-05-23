@@ -9,3 +9,19 @@ document.querySelector('.dropbtn').addEventListener('click', function() {
         dropdownContent.style.maxHeight = '500px';
     }
 });
+
+// Popup window for social links
+document.getElementById('social-links-button').addEventListener('click', function() {
+    document.getElementById('social-links-popup').style.display = 'block';
+});
+
+document.querySelector('.popup .close').addEventListener('click', function() {
+    document.getElementById('social-links-popup').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    const popup = document.getElementById('social-links-popup');
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+});
