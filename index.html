@@ -306,17 +306,16 @@
         </div>
     </div>
     <script>
-        // Smooth dropdown function
-        document.querySelector('.dropdown').addEventListener('mouseenter', function() {
-            const dropdownContent = this.querySelector('.dropdown-content');
-            dropdownContent.style.display = 'block';
-            dropdownContent.style.maxHeight = '500px';
-        });
-
-        document.querySelector('.dropdown').addEventListener('mouseleave', function() {
-            const dropdownContent = this.querySelector('.dropdown-content');
-            dropdownContent.style.display = 'none';
-            dropdownContent.style.maxHeight = '0';
+        // Toggle dropdown function
+        document.querySelector('.dropbtn').addEventListener('click', function() {
+            const dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+                dropdownContent.style.maxHeight = '0';
+            } else {
+                dropdownContent.style.display = 'block';
+                dropdownContent.style.maxHeight = '500px';
+            }
         });
     </script>
 </body>
